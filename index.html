@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <title>Getting Started with Learning React</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Getting Started with Learning React</title>
+	
+	<!-- Load Stylesheets -->
+
 </head>
 <body>
-	<div id="react-container"></div>
-
-	<script type="text/javascript">
+	<!-- content -->
+	<div id="react-container">NO REACT IMPLEMENTED!!- This is just an react container</div>
 	
+	<div id="babel-container">NO BABEL IMPLEMENTED!! - This is just a babel container</div>
+
+	<!-- Load Scripts -->
+	<!-- Load React -->
+	<!-- <script src="https://unpkg.com/react@^16/umd/react.development.js"></script> -->
+	<!-- <script src="https://unpkg.com/react-dom@^16/umd/react-dom.development.js"></script> -->
+	
+	<!-- Load Babel -->
+	<!-- script src="https://unpkg.com/babel-standalone@^6/babel.js"></script> -->
+
+	<!-- Custom script : React -->
+	<script type="text/javascript">	
 		ReactDOM.render(
-			React.createElement('h1', null, 'Hello World'),
+			React.createElement('h1', null, 'Hello World from React!'),
 			document.getElementById('react-container')
 		)
+	</script>
 
+	<!-- Custom script : Babel -->
+	<script type="text/babel">
+		const getMessage = () => "<h1>Hello World from Babel!!</h1>";
+		document.getElementById('babel-container').innerHTML = getMessage();
 	</script>
 
 </body>
