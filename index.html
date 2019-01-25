@@ -1,42 +1,145 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Getting Started with React and Babel</title>
 
-		<!-- Load Stylesheets -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Getting Started with React and Babel</title>
 
-	</head>
+	<!-- Load Stylesheets -->
+	<!-- Load Bootswatch -->
+	<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-e4EhcNyUDF/kj6ZoPkLnURgmd8KW1B4z9GHYKb7eTG3w3uN8di6EBsN2wrEYr8Gc"
+	 crossorigin="anonymous">
 
-	<body>
-		<!-- content -->
-		<div id="react-container">NO REACT IMPLEMENTED!!- This is just an react container</div>
+	 <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-62+JPIF7fVYAPS4itRiqKa7VU321chxfKZRtkSY0tGoTwcUItAFEH/HGTpvDH6e6" crossorigin="anonymous">
 
-		<div id="babel-container">NO BABEL IMPLEMENTED!! - This is just a babel container</div>
+</head>
 
-		<!-- Load Scripts -->
-		<!-- Load React -->
-		<script src="https://unpkg.com/react@^16/umd/react.development.js"></script>
-		<script src="https://unpkg.com/react-dom@^16/umd/react-dom.development.js"></script>
+<body>
 
-		<!-- Load Babel -->
-		<script src="https://unpkg.com/babel-standalone@^6/babel.js"></script>
+	<!-- CONTENT : START -->
 
-		<!-- Custom script : React -->
-		<script type="text/javascript">
-			const spn = React.createElement('span', null, 'from React!!');
-			ReactDOM.render(
-				React.createElement('h1', null, 'Hello World from {spn}'),
-				document.getElementById('react-container')
-			)
-		</script>
+	<ul class="nav nav-tabs">
+		<li class="nav-item">
+			<a class="nav-link active show" data-toggle="tab" href="#home">React</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" data-toggle="tab" href="#profile">Babel</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" data-toggle="tab" href="#about">Gulp</a>
+		</li>
+		<li class="nav-item">
+				<a class="nav-link disabled" data-toggle="tab" href="#contact">Angular</a>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Action</a>
+				<a class="dropdown-item" href="#">Another action</a>
+				<a class="dropdown-item" href="#">Something else here</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#">Separated link</a>
+			</div>
+		</li>
+	</ul>
+	<div id="myTabContent" class="tab-content">
+		<div class="tab-pane fade active show" id="home">
+			<div class="jumbotron">
+				<div id="react-container">NO REACT IMPLEMENTED!!- This is just an react container</div>
+				<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+					featured content or information.</p>
+				<hr class="my-4">
+				<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+				<p class="lead">
+					<a class="btn btn-primary btn-lg" href="#" role="button">Learn more about react</a>
+				</p>
+			</div>
+		</div>
 
-		<!-- Custom script : Babel -->
-		<script type="text/babel">
-			const getMessage = () => "<h1>Hello World from Babel!!</h1>";
+		<div class="tab-pane fade" id="profile">
+			<div class="jumbotron">
+				<div id="babel-container">NO BABEL IMPLEMENTED!! - This is just a babel container</div>
+				<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+					featured content or information.</p>
+				<hr class="my-4">
+				<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+				<p class="lead">
+					<a class="btn btn-primary btn-lg" href="#" role="button">Learn more about babel</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="tab-pane fade" id="about">
+			<div class="jumbotron">
+				<div id="gulp-container">NO GULP IMPLEMENTED!! - This is just a gulp container</div>
+				<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+					featured content or information.</p>
+				<hr class="my-4">
+				<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+				<p class="lead">
+					<a class="btn btn-primary btn-lg" href="#" role="button">Learn more about gulp</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="tab-pane fade" id="dropdown1">
+		<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack
+			lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore
+			carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred
+			pitchfork.</p>
+	</div>
+	<div class="tab-pane fade" id="dropdown2">
+		<p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse
+			gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche
+			high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral
+			locavore cosby sweater.</p>
+	</div>
+	</div>
+
+	<!-- CONTENT : END -->
+
+	<!-- Load Scripts -->
+	<!-- Load JQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+
+	<!-- Load Popper -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+
+	<!-- Load Bootstrap min -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+	 crossorigin="anonymous"></script>
+
+	<!-- Load React -->
+	<script src="https://unpkg.com/react@^16/umd/react.development.js"></script>
+	<script src="https://unpkg.com/react-dom@^16/umd/react-dom.development.js"></script>
+
+	<!-- Load Babel -->
+	<script src="https://unpkg.com/babel-standalone@^6/babel.js"></script>
+
+	<!-- Load Gulp Tasks -->
+	<script src="https://unpkg.com/gulp@^4.0.0/index.js"></script>
+	<script src="https://unpkg.com/gulp-util@3.0.8/index.js"></script>
+	<script src="https://unpkg.com/gulp-react@4.0.0/index.js"></script>
+	<script src="https://unpkg.com/reactify@1.1.1/index.js"></script>
+	<script src="https://unpkg.com/gulp-browserify@0.5.1/index.js"></script>
+	<script src="https://unpkg.com/gulp-webserver@0.9.1/src/index.js"></script>
+
+	<!-- Custom script : React -->
+	<script type="text/javascript">
+		ReactDOM.render(
+			React.createElement('h1', className = "display-3", 'Hello World from React'),
+			document.getElementById('react-container')
+		)
+	</script>
+
+	<!-- Custom script : Babel -->
+	<script type="text/babel">
+		const getMessage = () => "<h1 class='display-3'>Hello World from Babel!!</h1>";
 			document.getElementById('babel-container').innerHTML = getMessage();
 		</script>
+</body>
 
-	</body>
 </html>

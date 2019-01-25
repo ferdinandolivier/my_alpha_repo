@@ -1,0 +1,29 @@
+{
+  "name": "my_alpha_repo",
+  "version": "1.0.0",
+  "description": "First initiative: : Learning React and Babel running on a server",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm start",
+    "serve": "nodemon --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferdinandolivier/my_alpha_repo.git"
+  },
+  "author": "Ferdinand Olivier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferdinandolivier/my_alpha_repo/issues"
+  },
+  "homepage": "https://github.com/ferdinandolivier/my_alpha_repo#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-react": "^3.1.0",
+    "gulp-webserver": "^0.9.1",
+    "reactify": "^1.1.1"
+  }
+}
